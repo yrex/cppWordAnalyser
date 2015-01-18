@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34BDEA271A619F2B002B4F1D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34BDEA261A619F2B002B4F1D /* main.cpp */; };
+		34BDEA2F1A61A003002B4F1D /* WordAnalyser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34BDEA2D1A61A002002B4F1D /* WordAnalyser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		34109A211A6C3CC2003CC111 /* excluded_words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = excluded_words.txt; sourceTree = "<group>"; };
+		34109A221A6C3CC2003CC111 /* TheRaven.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheRaven.txt; sourceTree = "<group>"; };
+		34109A231A6C4491003CC111 /* output.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.csv; sourceTree = "<group>"; };
 		34BDEA231A619F2B002B4F1D /* WordFreq */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WordFreq; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BDEA261A619F2B002B4F1D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		34BDEA2D1A61A002002B4F1D /* WordAnalyser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordAnalyser.cpp; sourceTree = "<group>"; };
+		34BDEA2E1A61A003002B4F1D /* WordAnalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordAnalyser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +44,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34109A201A6C3C71003CC111 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				34109A231A6C4491003CC111 /* output.csv */,
+				34109A211A6C3CC2003CC111 /* excluded_words.txt */,
+				34109A221A6C3CC2003CC111 /* TheRaven.txt */,
+			);
+			name = Files;
+			path = WordFreq;
+			sourceTree = "<group>";
+		};
 		34BDEA1A1A619F2B002B4F1D = {
 			isa = PBXGroup;
 			children = (
+				34109A201A6C3C71003CC111 /* Files */,
 				34BDEA251A619F2B002B4F1D /* WordFreq */,
 				34BDEA241A619F2B002B4F1D /* Products */,
 			);
@@ -58,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				34BDEA261A619F2B002B4F1D /* main.cpp */,
+				34BDEA2D1A61A002002B4F1D /* WordAnalyser.cpp */,
+				34BDEA2E1A61A003002B4F1D /* WordAnalyser.h */,
 			);
 			path = WordFreq;
 			sourceTree = "<group>";
@@ -118,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BDEA2F1A61A003002B4F1D /* WordAnalyser.cpp in Sources */,
 				34BDEA271A619F2B002B4F1D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +253,7 @@
 				34BDEA2C1A619F2B002B4F1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
